@@ -25,7 +25,8 @@ main {
 
 .side-bar {
     height: 100%;
-    width: 17%;
+    max-width: 217px;
+    min-width: 217px;
     background-color: white;
     overflow-y: hidden;
 }
@@ -46,6 +47,10 @@ main {
     margin-left: 30px;
 }
 
+.search {
+    width: 35%;
+}
+
 .search form {
     display: flex;
     align-items: center;
@@ -54,7 +59,7 @@ main {
 }
 
 #search-input {
-    width: 600px;
+    width: 100%;
     padding:10px;
     border: 0;
     height: 100%;
@@ -119,12 +124,13 @@ hr {
     flex-direction: row;
     justify-content: flex-start;
     gap: 20px;
-    flex-wrap: wrap;
+    overflow-y: auto;
 }
   
 .video {
     width: 270px;
     margin-bottom: 15px;
+    flex: 0 0 270px;
 }
 
 .thumbnail {
@@ -194,7 +200,7 @@ span {
 }
 
 .icons-right > i {
-    margin-right: 50px;
+    margin-right: 2rem;
 }
 
 .subscriptions > h4 {
@@ -292,6 +298,9 @@ span {
     .video {
         margin: 0 auto;
     }
+    .videos {
+        margin-bottom: 40px;
+    }
     #camera {
         display: none;
     }
@@ -301,12 +310,17 @@ span {
     #bell{
         display: none;
     }
+    #profile {
+        margin-right: 0;
+    }
 }
 
 @media (min-width: 769px) {
     .mobile-footer {
         display: none;
     }
+    #mobile-search {
+        display: none;
+        margin-right: 1rem;
+    } 
 }
-
-  
