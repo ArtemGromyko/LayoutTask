@@ -49,6 +49,8 @@ main {
 
 .search {
     width: 35%;
+    position: absolute;
+    margin-left: 217px;
 }
 
 .search form {
