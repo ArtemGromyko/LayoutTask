@@ -48,9 +48,15 @@ main {
 }
 
 .search {
-    width: 35%;
-    position: absolute;
-    margin-left: 217px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.search-form {
+    padding-left: 2.5em;
+    width: 70%;
 }
 
 .search form {
